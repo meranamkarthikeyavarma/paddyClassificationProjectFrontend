@@ -1,0 +1,45 @@
+/* LoadingSpinner.css */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.spinner-icon {
+  font-size: 2rem;
+  color: #16a34a;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  color: #16a34a;
+  font-weight: 500;
+  margin: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .loading-container {
+    padding: 24px 0;
+  }
+  
+  .spinner-icon {
+    font-size: 1.5rem;
+  }
+}
